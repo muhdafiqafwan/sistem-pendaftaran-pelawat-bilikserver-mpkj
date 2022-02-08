@@ -1,0 +1,56 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+.td {
+	white-space: nowrap;
+}
+
+/* Style the header */
+.header {
+	background: linear-gradient(to right, #6699ff 9%, #ffffff 86%);
+	text-align: left;
+	font-size: 35px;
+	padding-top: 1px;
+	border-bottom: 1.5px solid black;
+}
+/* Create three unequal columns that floats next to each other */
+.column {
+	float: left;
+	padding: 10px; /* Should be removed. Only for demonstration */
+}
+/* Left and right column */
+.column.side {
+	width: 20%;
+	font-family: "Lucida Grande";
+	font-size: small;
+	text-align: justify;
+	border-right: 1px solid silver;
+}
+/* Middle column */
+.column.middle {
+	width: 80%;
+}
+/* Clear floats after the columns */
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+/* Style the footer */
+.footer {
+	margin-top: 90px;
+	background-color: #FFFFFF;
+	text-align: center;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+.column.side, .column.middle {
+	width: 100%;
+}
+}
+
+

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<favorite name="all" value="/js/all.js"/>
+<favorite name="all.min" value="/js/all.min.js"/>
+<favorite name="fontawesome" value="/js/fontawesome.js"/>
+<favorite name="fontawesome.min" value="/js/fontawesome.min.js"/>

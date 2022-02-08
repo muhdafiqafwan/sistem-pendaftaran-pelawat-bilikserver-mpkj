@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 1em;
+    font: 1.2em/1.3em 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Roboto-Light', 'Roboto Light', 'Roboto', 'Segoe UI Web Light', 'Segoe UI Light', 'Segoe UI Web Regular', 'Segoe UI', Helvetica, Arial, sans-serif;
+  color: #fff;
+}
+h1 {
+    font-weight: normal;
+    text-align: center;
+}
+p {
+    margin: 0 0 1em 0;
+}
+
+#main {
+   margin: auto;
+   padding: auto;
+
+}
+
+header,
+footer,
+#main > article,
+#main > nav,
+#main > aside {
+   margin: 4px;
+   padding: 1em;
+}
+ 
+#main > article {
+   background: #996;
+   -webkit-flex: 4 1 0;
+           flex: 4 1 0;
+   -webkit-order: 2;
+           order: 2;
+}
+
+#main > nav,
+#main > aside {
+padding-right:20px;
+	margin:0;
+	font-size:12pt;
+	color: black;
+}
+
+
+
+  
+#main > aside {
+   -webkit-order: 3;
+           order: 3;
+}
+ 
+header, footer {
+   display: block;
+   min-height: 80px;
+}
+
+header {
+   background: linear-gradient(to right, #6699ff 9%, #ffffff 86%)
+}
+
+footer {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+ 
+/* Too narrow to support three columns */
+  @media all and (max-width: 640px) {
+  
+   #main, #page {
+    -webkit-flex-flow: column;
+            flex-flow: column;
+}
+
+   #main > article, #main > nav, #main > aside {
+    /* Return them to document order */
+    -webkit-order: 0;
+            order: 0;
+   }
+  
+   #main > nav, #main > aside, header, footer {
+    min-height: 50px;
+  
+   }
+}
